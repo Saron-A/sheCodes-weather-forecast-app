@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-bar">
+        <input type="text" placeholder="Search for a city..." id="search" />
+        <button type="submit" id="search-btn">Search</button>
+      </div>
+      <div class="weather-info">
+        <div class="city-other">
+          <h1>Paris</h1>
+          <p>
+            <span class="day"></span> <span class="time"></span>,
+            <span class="description"></span> <br />
+            Humidity: <span class="humidity"></span>, Wind:
+            <span class="wind"></span>
+          </p>
+        </div>
+        <div class="temp">
+          <img src="" alt="" id="weather-icon" />
+          <p><span class="temp"></span></p>
+        </div>
+      </div>
+
+      <div class="weather-forecast"></div>
+
+      <div class="footer">
+        <p>
+          This project is coded by
+          <a href="https://github.com/Saron-A">Saron Demisu</a>, is
+          <a href="https://github.com/Saron-A/sheCodes-weather-app-homework"
+            >open-sourced on Github</a
+          >
+          and
+          <a href="https://saron-app.netlify.app/">hosted on Netlify.</a>
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
