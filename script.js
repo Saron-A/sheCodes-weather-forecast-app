@@ -60,7 +60,7 @@ function getDailyWeather(info) {
   wind.innerHTML = `${info.daily[0].wind.speed} km/h`;
 
   let temp = document.querySelector("span.temp");
-  temp.innerHTML = Math.round(info.daily[0].temperature.day);
+  temp.innerHTML = `${Math.round(info.daily[0].temperature.day)}&degC`;
   temp.setAttribute("style", "font-size: 3rem; font-weight: 700;");
 
   let img = document.querySelector(".temp img");
